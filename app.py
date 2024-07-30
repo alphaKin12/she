@@ -1,5 +1,5 @@
 import streamlit as st
-
+from PIL import Image
 # Define functions for each page
 def first_page():
     st.title("Holy day, thank you for being the biggest blessing. 01/08/2023")
@@ -59,7 +59,6 @@ def page_three():
         My dearest Shinjini,
 
         Over the time we've spent together, I've learned so many invaluable lessons from you. Here are some of the most cherished lessons that have profoundly impacted my life:
-
         """
     )
 
@@ -79,15 +78,18 @@ def page_three():
     for i, lesson in enumerate(lessons):
         with cols[i % num_columns]:
             st.markdown(f"""
-            <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-                <h4>{lesson['title']}</h4>
-                <p>{lesson['description']}</p>
+            <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                <h4 style="color: #333; font-family: Arial, sans-serif;">{lesson['title']}</h4>
+                <p style="color: #555; font-family: Arial, sans-serif;">{lesson['description']}</p>
             </div>
             """, unsafe_allow_html=True)
         
     # Optional: Add an image or illustration
-   # image = Image.open("path_to_your_image.jpg")
-    #st.image(image, caption="Together we learn and grow", use_column_width=True)
+    try:
+        image = Image.open("path_to_your_image.jpg")
+        st.image(image, caption="Together we learn and grow", use_column_width=True)
+    except FileNotFoundError:
+        st.write("Image file not found.")
 
     # Conclusion
     st.write(
