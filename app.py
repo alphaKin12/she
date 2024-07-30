@@ -104,7 +104,7 @@ def second_page():
 
     Shinjini Anurag Thakur.
 
-    ##N - Naive
+    ## N - Naive
     
 
     My dearest love,
@@ -125,7 +125,7 @@ def second_page():
 
     Aadi
 
-    ##I - Idol
+    ## I - Idol
     My dearest,
 
     You have been my goddess, my Juno, ever since you entered my life. Your presence has illuminated my world, and through you, I have learned the most profound and important lessons in life.
