@@ -29,7 +29,7 @@ def first_page():
     if st.button("Surprise"):
         st.write("[Click here to see the surprise!](#upload link here)")
 def second_page():
-   def second_page():
+  
     st.title("Shinjini")
     
     # Display each paragraph
