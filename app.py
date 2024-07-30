@@ -157,20 +157,20 @@ def page_six():
     )
 
 
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
+st.sidebar.title("Choose our place for love :")
+page = st.sidebar.radio("Go to", ["Start", "SHINJINI(Love the name!)", "Lessons from Devi", "Writings", "From the baby Aadini", "From A to S"])
 
-if page == "First Page":
+if page == "Start":
      first_page()
-elif page == "Second Page":
+elif page == "Shinjini(Love the name!)":
     second_page()
-elif page == "Third Page":
+elif page == "Lessons from Devi":
     page_three()
-elif page == "Fourth Page":
+elif page == "Writings":
     page_four()
-elif page == "Fifth Page":
+elif page == "From the baby Aadini":
     page_five()
-elif page == "Sixth Page":
+elif page == "From A to S":
     page_six()
 
 
