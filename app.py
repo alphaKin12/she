@@ -158,25 +158,51 @@ def page_six():
 
 
 def navigation_menu():
-    st.markdown(
+   st.markdown(
         """
         <style>
-        .nav-item {
-            display: inline-block;
-            margin-right: 20px;
-            font-size: 18px;
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 10px;
         }
-        .nav-item a {
+        .nav-item {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav-item button {
+            background: none;
+            border: none;
             color: #000;
             text-decoration: none;
+            cursor: pointer;
         }
-        .nav-item a:hover {
+        .nav-item button:hover {
             text-decoration: underline;
         }
         </style>
         """, 
         unsafe_allow_html=True
     )
+    
+    st.markdown(
+        """
+        <div class="nav-container">
+            <div class="nav-item"><button onclick="window.location.href='#'">Start</button></div>
+            <div class="nav-item"><button onclick="window.location.href='#'">Shinjini (Love the name!)</button></div>
+            <div class="nav-item"><button onclick="window.location.href='#'">Lessons from Devi</button></div>
+            <div class="nav-item"><button onclick="window.location.href='#'">Writings</button></div>
+            <div class="nav-item"><button onclick="window.location.href='#'">From the baby Aadini</button></div>
+            <div class="nav-item"><button onclick="window.location.href='#'">From A to S</button></div>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
+
     
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     with col1:
