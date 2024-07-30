@@ -157,20 +157,64 @@ def page_six():
     )
 
 
-st.sidebar.title("Choose our place for love :")
-page = st.sidebar.radio("Go to", ["Start", "SHINJINI(Love the name!)", "Lessons from Devi", "Writings", "From the baby Aadini", "From A to S"])
+def navigation_menu():
+    st.markdown(
+        """
+        <style>
+        .nav-item {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+        .nav-item a {
+            color: #000;
+            text-decoration: none;
+        }
+        .nav-item a:hover {
+            text-decoration: underline;
+        }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
+    
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    with col1:
+        if st.button("Start"):
+            st.session_state.page = "Start"
+    with col2:
+        if st.button("Shinjini (Love the name!)"):
+            st.session_state.page = "Shinjini (Love the name!)"
+    with col3:
+        if st.button("Lessons from Devi"):
+            st.session_state.page = "Lessons from Devi"
+    with col4:
+        if st.button("Writings"):
+            st.session_state.page = "Writings"
+    with col5:
+        if st.button("From the baby Aadini"):
+            st.session_state.page = "From the baby Aadini"
+    with col6:
+        if st.button("From A to S"):
+            st.session_state.page = "From A to S"
+def main():
+    if 'page' not in st.session_state:
+        st.session_state.page = "Start"
 
-if page == "Start":
-     first_page()
-elif page == "Shinjini(Love the name!)":
-    second_page()
-elif page == "Lessons from Devi":
-    page_three()
-elif page == "Writings":
-    page_four()
-elif page == "From the baby Aadini":
-    page_five()
-elif page == "From A to S":
-    page_six()
+    navigation_menu()
 
+    if st.session_state.page == "Start":
+        first_page()
+    elif st.session_state.page == "Shinjini (Love the name!)":
+        second_page()
+    elif st.session_state.page == "Lessons from Devi":
+        page_three()
+    elif st.session_state.page == "Writings":
+        page_four()
+    elif st.session_state.page == "From the baby Aadini":
+        page_five()
+    elif st.session_state.page == "From A to S":
+        page_six()
 
+if __name__ == "__main__":
+    main()
