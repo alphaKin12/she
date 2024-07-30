@@ -158,7 +158,7 @@ def page_six():
 
 
 def navigation_menu():
-   st.markdown(
+    st.markdown(
         """
         <style>
         .nav-container {
@@ -189,7 +189,7 @@ def navigation_menu():
         unsafe_allow_html=True
     )
     
-   st.markdown(
+    st.markdown(
         """
         <div class="nav-container">
             <div class="nav-item"><button onclick="window.location.href='#'">Start</button></div>
@@ -203,7 +203,6 @@ def navigation_menu():
         unsafe_allow_html=True
     )
 
-    
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     with col1:
         if st.button("Start"):
