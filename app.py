@@ -85,7 +85,7 @@ def page_three():
             """, unsafe_allow_html=True)
         
     # Optional: Add an image or illustration
-    image_url = "https://imgs.search.brave.com/XEc57uIwXAq4fWBOjlHTKFs36F7JrRIbXxNoHv85wMM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/YS50cmFuc2Zlcm1h/cmt0LnRlY2hub2xv/Z3kvcG9ydHJhaXQv/YmlnLzgxOTgtMTY5/NDYwOTY3MC5qcGc_/bG09MQ"
+    image_url = "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240608-WA0000.jpg"
     
     try:
         st.image(image_url, caption="Together we learn and grow", use_column_width=True)
