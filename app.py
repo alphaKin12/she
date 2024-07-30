@@ -5,7 +5,7 @@ def first_page():
     st.title("Holy day, thank you for being the biggest blessing. 01/08/2023")
     
     # Corrected image URL
-    image_url = "https://drive.google.com/uc?export=view&id=1FBQb0dAUPUBHgYSTLc8DHvE8g48LZnHd"
+    image_url = "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240615-WA0034.jpg"
     
     # Display the image
     st.image(image_url, use_column_width=True)
