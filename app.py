@@ -189,20 +189,7 @@ def navigation_menu():
         unsafe_allow_html=True
     )
     
-    st.markdown(
-        """
-        <div class="nav-container">
-            <div class="nav-item"><button onclick="window.location.href='#'">Start</button></div>
-            <div class="nav-item"><button onclick="window.location.href='#'">Shinjini (Love the name!)</button></div>
-            <div class="nav-item"><button onclick="window.location.href='#'">Lessons from Devi</button></div>
-            <div class="nav-item"><button onclick="window.location.href='#'">Writings</button></div>
-            <div class="nav-item"><button onclick="window.location.href='#'">From the baby Aadini</button></div>
-            <div class="nav-item"><button onclick="window.location.href='#'">From A to S</button></div>
-        </div>
-        """, 
-        unsafe_allow_html=True
-    )
-
+   
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     with col1:
         if st.button("Start"):
