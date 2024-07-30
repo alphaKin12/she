@@ -5,7 +5,8 @@ def first_page():
     st.title("Holy day, thank you for being the biggest blessing. 01/08/2023")
     
     # Display the image from Google Drive
-    st.image("https://drive.google.com/file/d/1FBQb0dAUPUBHgYSTLc8DHvE8g48LZnHd/view?usp=share_link", use_column_width=True)
+    st.image("https://drive.google.com/uc?export=view&id=1FBQb0dAUPUBHgYSTLc8DHvE8g48LZnHd", use_column_width=True)
+    
     
     # Display the text
     st.write("""
