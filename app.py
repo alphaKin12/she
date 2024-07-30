@@ -102,12 +102,76 @@ def page_three():
         Aadi
         """
     )
-# Page navigation
-page = st.sidebar.selectbox("Choose a page", ["Home", "Second Page","Third Page"])
-if page == "Home":
-    first_page()
-elif page == "Second Page":
-    second_page()
-elif page=="Third Page":
-    page_three()
-    
+def page_four():
+    st.title("Handwritten Poems")
+
+    st.write("Here are some of the heartfelt poems I wrote for you:")
+
+    poem_images = [
+        "path/to/poem1.jpg",
+        "path/to/poem2.jpg",
+        "path/to/poem3.jpg",
+        "path/to/poem4.jpg",
+        "path/to/poem5.jpg",
+        "path/to/poem6.jpg"
+    ]
+
+    for img in poem_images:
+        st.image(img, use_column_width=True, caption="A poem just for you")
+def page_five():
+    st.title("About Us")
+
+    st.write("A journey through our childhood memories and growing up years.")
+
+    st.write("**Her Childhood Photos**")
+    her_photos = [
+        "path/to/her_childhood1.jpg",
+        "path/to/her_childhood2.jpg"
+    ]
+
+    for img in her_photos:
+        st.image(img, use_column_width=True, caption="Her childhood memory")
+
+    st.write("**My Childhood Photos**")
+    my_photos = [
+        "path/to/my_childhood1.jpg",
+        "path/to/my_childhood2.jpg",
+        "path/to/my_childhood3.jpg"
+    ]
+
+    for img in my_photos:
+        st.image(img, use_column_width=True, caption="My childhood memory")
+def page_six():
+    st.title("A Heartfelt Letter")
+
+    st.write("My Dearest Shinjini,")
+
+    st.write(
+        """
+        [Your heartfelt letter text goes here. Write your letter as you would
+        write it on a piece of paper, expressing your love and feelings.]
+        
+        With all my love,
+        Aadi
+        """
+    )
+
+def main():
+    st.sidebar.title("Navigation")
+    page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
+
+    if page == "First Page":
+        first_page()
+    elif page == "Second Page":
+        second_page()
+    elif page == "Third Page":
+        page_three()
+    elif page == "Fourth Page":
+        page_four()
+    elif page == "Fifth Page":
+        page_five()
+    elif page == "Sixth Page":
+        page_six()
+
+if __name__ == "__main__":
+    main()
