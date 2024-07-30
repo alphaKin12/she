@@ -30,12 +30,7 @@ def first_page():
     # Add the surprise button
     if st.button("Surprise"):
         st.write("[Click here to see the surprise!](#upload link here)")
-def second_page():
-  
-    st.title("Shinjini")
-    
-    # Display each paragraph
-    import streamlit as st
+
 
 def second_page():
     st.title("Shinjini")
@@ -56,9 +51,59 @@ def second_page():
         with st.expander(title, expanded=False):
             st.write(content)
 # Page navigation
-page = st.sidebar.selectbox("Choose a page", ["Home", "Second Page"])
+page = st.sidebar.selectbox("Choose a page", ["Home", "Second Page","Third Page"])
+def page_three():
+    st.title("Lessons I've Learned From You")
+
+    st.write(
+        """
+        My dearest Shinjini,
+
+        Over the time we've spent together, I've learned so many invaluable lessons from you. Here are some of the most cherished lessons that have profoundly impacted my life:
+
+        """
+    )
+
+    # Define lessons with optional icons or images
+    lessons = [
+        {"title": "Embrace Life's Simplicity", "description": "You've taught me to find joy in the simple things and to appreciate the small moments in life."},
+        {"title": "Value Unconditional Love", "description": "Your love has shown me the true meaning of unconditional affection and the importance of giving without expecting anything in return."},
+        {"title": "Stay Positive in Adversity", "description": "Your positive attitude in tough times has been an inspiration and a reminder to stay optimistic."},
+        {"title": "Cherish Every Moment", "description": "You've reminded me to cherish every moment and to make the most out of every day we have together."},
+    ]
+
+    # Create columns for lessons
+    num_columns = 2
+    cols = st.columns(num_columns)
+
+    # Display lessons in boxes
+    for i, lesson in enumerate(lessons):
+        with cols[i % num_columns]:
+            st.markdown(f"""
+            <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                <h4>{lesson['title']}</h4>
+                <p>{lesson['description']}</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+    # Optional: Add an image or illustration
+    image = Image.open("path_to_your_image.jpg")
+    st.image(image, caption="Together we learn and grow", use_column_width=True)
+
+    # Conclusion
+    st.write(
+        """
+        Each of these lessons has enriched my life in countless ways. Thank you for being my guide, my inspiration, and my greatest teacher. I look forward to continuing this journey with you and learning even more together.
+
+        With all my love,
+        Aadi
+        """
+    )
 
 if page == "Home":
     first_page()
 elif page == "Second Page":
     second_page()
+elif page=="Third Page":
+    page_three()
+    
