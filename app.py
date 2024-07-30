@@ -50,8 +50,7 @@ def second_page():
     for title, content in sections:
         with st.expander(title, expanded=False):
             st.write(content)
-# Page navigation
-page = st.sidebar.selectbox("Choose a page", ["Home", "Second Page","Third Page"])
+
 def page_three():
     st.title("Lessons I've Learned From You")
 
@@ -87,8 +86,8 @@ def page_three():
             """, unsafe_allow_html=True)
         
     # Optional: Add an image or illustration
-    image = Image.open("path_to_your_image.jpg")
-    st.image(image, caption="Together we learn and grow", use_column_width=True)
+   # image = Image.open("path_to_your_image.jpg")
+    #st.image(image, caption="Together we learn and grow", use_column_width=True)
 
     # Conclusion
     st.write(
@@ -99,7 +98,8 @@ def page_three():
         Aadi
         """
     )
-
+# Page navigation
+page = st.sidebar.selectbox("Choose a page", ["Home", "Second Page","Third Page"])
 if page == "Home":
     first_page()
 elif page == "Second Page":
