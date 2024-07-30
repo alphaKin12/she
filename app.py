@@ -156,22 +156,21 @@ def page_six():
         """
     )
 
-def main():
-    st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
 
-    if page == "First Page":
-        first_page()
-    elif page == "Second Page":
-        second_page()
-    elif page == "Third Page":
-        page_three()
-    elif page == "Fourth Page":
-        page_four()
-    elif page == "Fifth Page":
-        page_five()
-    elif page == "Sixth Page":
-        page_six()
+ st.sidebar.title("Navigation")
+ page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
 
-if __name__ == "__main__":
-    main()
+if page == "First Page":
+     first_page()
+elif page == "Second Page":
+    second_page()
+elif page == "Third Page":
+    page_three()
+elif page == "Fourth Page":
+    page_four()
+elif page == "Fifth Page":
+    page_five()
+elif page == "Sixth Page":
+    page_six()
+
+
