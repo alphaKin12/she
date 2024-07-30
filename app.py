@@ -85,11 +85,13 @@ def page_three():
             """, unsafe_allow_html=True)
         
     # Optional: Add an image or illustration
+   image_url = "https://drive.google.com/uc?export=view&id=1FEy0E6H_ZR8-pnl9YjZe1Qb7QZJnddu4"
+    
     try:
-        image = Image.open("https://drive.google.com/file/d/1FEy0E6H_ZR8-pnl9YjZe1Qb7QZJnddu4/view?usp=share_link")
-        st.image(image, caption="Together we learn and grow", use_column_width=True)
-    except FileNotFoundError:
-        st.write("Image file not found.")
+        st.image(image_url, caption="Together we learn and grow", use_column_width=True)
+    except Exception as e:
+        st.write(f"Image could not be loaded: {e}")
+
 
     # Conclusion
     st.write(
