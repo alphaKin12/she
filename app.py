@@ -157,8 +157,8 @@ def page_six():
     )
 
 
- st.sidebar.title("Navigation")
- page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["First Page", "Second Page", "Third Page", "Fourth Page", "Fifth Page", "Sixth Page"])
 
 if page == "First Page":
      first_page()
