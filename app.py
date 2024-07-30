@@ -189,7 +189,7 @@ def navigation_menu():
         unsafe_allow_html=True
     )
     
-  st.markdown(
+   st.markdown(
         """
         <div class="nav-container">
             <div class="nav-item"><button onclick="window.location.href='#'">Start</button></div>
