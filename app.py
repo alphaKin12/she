@@ -85,7 +85,7 @@ def page_three():
             """, unsafe_allow_html=True)
         
     # Optional: Add an image or illustration
-   image_url = "https://drive.google.com/uc?export=view&id=1FEy0E6H_ZR8-pnl9YjZe1Qb7QZJnddu4"
+    image_url = "https://drive.google.com/uc?export=view&id=1FEy0E6H_ZR8-pnl9YjZe1Qb7QZJnddu4"
     
     try:
         st.image(image_url, caption="Together we learn and grow", use_column_width=True)
