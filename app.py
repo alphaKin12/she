@@ -56,18 +56,18 @@ def page_three():
 
     st.write(
         """
-        My dearest Shinjini,
+        My dearest Shinu,
 
-        Over the time we've spent together, I've learned so many invaluable lessons from you. Here are some of the most cherished lessons that have profoundly impacted my life:
+        Over the time we've spent together, I've learned so many invaluable lessons from you. Here are some of the most cherished lessons that have profoundly impacted my life, when I say this, i truly mean the word profound. I was this sweet know it all arrogant guy who cared little about stuff around:
         """
     )
 
     # Define lessons with optional icons or images
     lessons = [
-        {"title": "Embrace Life's Simplicity", "description": "You've taught me to find joy in the simple things and to appreciate the small moments in life."},
-        {"title": "Value Unconditional Love", "description": "Your love has shown me the true meaning of unconditional affection and the importance of giving without expecting anything in return."},
-        {"title": "Stay Positive in Adversity", "description": "Your positive attitude in tough times has been an inspiration and a reminder to stay optimistic."},
-        {"title": "Cherish Every Moment", "description": "You've reminded me to cherish every moment and to make the most out of every day we have together."},
+        {"title": "Gratefulness", "description": "You've taught me to find joy in the simple things and to appreciate the small moments in life.You have taught me what it means to love and to be loved. You have given me endless moments to cherish. You have told me how everything has something good to it. And how consideration and a little patience kind of sorts everything out. You aren't perfect in those yourself but you still ensure je Aadi know. Thank you Shinu :)"},
+        {"title": "Family comes first", "description": "I did. I still do today a little maybe, but I genuinely have started valuing people with me so so much more.Knowingly, unknowingly you have taught me the way to work to keep my relationships and friendships healthy and safe. You have taught me how everything needs efforts."},
+        {"title": "To be more understanding", "description": "To understand people in situations before reacting. I am in general quite short tempered. You brought in peace. You brought in calm. Taught me how to not judge people as much. To be more considerate. In the process, I have become a much understanding lover, maybe shinu? :")"},
+        {"title": "Leap of faith is all it takes", "description": "I have been a guy with trust issues(ektu). The amount of trust you put in me makes me believe in the good things of the world. How true love sees no logic. Believes in nothing but the good and how trusting someone despite what society says is still the best deal. You have taken that leap of faith to be with your Aadi despite him being a 1000 km away, ain't it jaanu? Thank you for this too, once again. I will be grateful to you 4ever."},
     ]
 
     # Create columns for lessons
@@ -86,7 +86,7 @@ def page_three():
         
     # Optional: Add an image or illustration
     try:
-        image = Image.open("path_to_your_image.jpg")
+        image = Image.open("https://drive.google.com/file/d/1FEy0E6H_ZR8-pnl9YjZe1Qb7QZJnddu4/view?usp=share_link")
         st.image(image, caption="Together we learn and grow", use_column_width=True)
     except FileNotFoundError:
         st.write("Image file not found.")
