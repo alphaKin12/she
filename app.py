@@ -187,10 +187,6 @@ Shinjini Mukherjee, Thank you for being mine. It is a privilege.
         Aadi
         """
     )
-
-
-import streamlit as st
-
 def navigation_menu():
     st.markdown(
         """
@@ -208,12 +204,14 @@ def navigation_menu():
             font-size: 18px;
             font-weight: bold;
         }
-        .nav-item a {
+        .nav-item button {
+            background: none;
+            border: none;
             color: #000;
             text-decoration: none;
-            padding: 10px;
+            cursor: pointer;
         }
-        .nav-item a:hover {
+        .nav-item button:hover {
             text-decoration: underline;
         }
         </style>
@@ -221,31 +219,26 @@ def navigation_menu():
         unsafe_allow_html=True
     )
     
-    st.markdown(
-        """
-        <div class="nav-container">
-            <div class="nav-item"><a href="#start" onclick="changePage('Start')">Start</a></div>
-            <div class="nav-item"><a href="#shinjini" onclick="changePage('Shinjini (Love the name!)')">Shinjini (Love the name!)</a></div>
-            <div class="nav-item"><a href="#lessons" onclick="changePage('Lessons from Devi')">Lessons from Devi</a></div>
-            <div class="nav-item"><a href="#writings" onclick="changePage('Writings')">Writings</a></div>
-            <div class="nav-item"><a href="#baby" onclick="changePage('From the baby Aadini')">From the baby Aadini</a></div>
-            <div class="nav-item"><a href="#atoz" onclick="changePage('From A to S')">From A to S</a></div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        """
-        <script>
-        function changePage(page) {
-            window.parent.postMessage({type: 'CHANGE_PAGE', page: page}, '*');
-        }
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
-
+   
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    with col1:
+        if st.button("Start"):
+            st.session_state.page = "Start"
+    with col2:
+        if st.button("Shinjini (Love the name!)"):
+            st.session_state.page = "Shinjini (Love the name!)"
+    with col3:
+        if st.button("Lessons from Devi"):
+            st.session_state.page = "Lessons from Devi"
+    with col4:
+        if st.button("Writings"):
+            st.session_state.page = "Writings"
+    with col5:
+        if st.button("From the baby Aadini"):
+            st.session_state.page = "From the baby Aadini"
+    with col6:
+        if st.button("From A to S"):
+            st.session_state.page = "From A to S"
 def main():
     if 'page' not in st.session_state:
         st.session_state.page = "Start"
@@ -264,9 +257,6 @@ def main():
         page_five()
     elif st.session_state.page == "From A to S":
         page_six()
-
-
-    st.write("This is the sixth page content.")
 
 if __name__ == "__main__":
     main()
