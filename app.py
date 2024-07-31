@@ -141,6 +141,7 @@ def page_five():
     )
 
     st.write("### Aadi")
+    st.write("I have been maybe the most spoiled kid growing up")
     st.write("**My Childhood Photos**")
     st.markdown(
         """
