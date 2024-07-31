@@ -138,6 +138,7 @@ def page_five():
             <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
         </div>
         """
+
     st.markdown(f"<div style='text-align: center;'>{her_photos_html}</div>", unsafe_allow_html=True)
 
     st.write("### Aadi")
@@ -157,6 +158,7 @@ def page_five():
             <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
         </div>
         """
+
     st.markdown(f"<div style='text-align: center;'>{my_photos_html}</div>", unsafe_allow_html=True)
 
     st.markdown(
@@ -172,8 +174,6 @@ def page_five():
         """, 
         unsafe_allow_html=True
     )
-
-
 def page_six():
     st.title("A Heartfelt Letter")
 
