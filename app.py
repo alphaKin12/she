@@ -119,8 +119,6 @@ def page_four():
     for poem in poems:
         st.image(poem["image"], use_column_width=True, caption=poem["caption"])
 
-# Call the function to render the page
-page_four()
 
 def page_five():
     st.title("About Us")
