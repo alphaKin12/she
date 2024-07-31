@@ -120,9 +120,9 @@ def page_four():
         st.image(img, use_column_width=True, caption="A poem just for you")
 def page_five():
     st.title("About Us")
-
     st.write("A journey through our childhood memories and growing up years.")
 
+    st.write("### Shinu")
     st.write("**Her Childhood Photos**")
     her_photos = [
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg",
@@ -130,8 +130,9 @@ def page_five():
     ]
 
     for img in her_photos:
-        st.image(img, use_column_width=True, caption="Her childhood memory")
+        st.image(img, caption="<h4>Her childhood memory</h4>", use_column_width=False, width=300)
 
+    st.write("### Aadi")
     st.write("**My Childhood Photos**")
     my_photos = [
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0015.jpg",
@@ -140,7 +141,22 @@ def page_five():
     ]
 
     for img in my_photos:
-        st.image(img, use_column_width=True, caption="My childhood memory")
+        st.image(img, caption="<h4>My childhood memory</h4>", use_column_width=False, width=300)
+
+    st.markdown(
+        """
+        <style>
+        h4 {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
+
 def page_six():
     st.title("A Heartfelt Letter")
 
