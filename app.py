@@ -107,17 +107,21 @@ def page_four():
 
     st.write("Here are some of the heartfelt poems I wrote for you:")
 
-    poem_images = [
-        "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.20.57%20PM.png",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.29.06%20PM.png",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163016.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163000.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163010.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_162953.jpg"
+    poems = [
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.20.57%20PM.png", "caption": "Pizza love"},
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.29.06%20PM.png", "caption": "Us"},
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163016.jpg", "caption": "Pictures from me"},
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163000.jpg", "caption": "Two souls I"},
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163010.jpg", "caption": "Two souls II"},
+        {"image": "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_162953.jpg", "caption": "Meri pyaari shinu"}
     ]
 
-    for img in poem_images:
-        st.image(img, use_column_width=True, caption="A poem just for you")
+    for poem in poems:
+        st.image(poem["image"], use_column_width=True, caption=poem["caption"])
+
+# Call the function to render the page
+page_four()
+
 def page_five():
     st.title("About Us")
     st.write("A journey through our childhood memories and growing up years. You were way too beautiful. Way too much. A true blessing in life.")
