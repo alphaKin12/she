@@ -120,7 +120,7 @@ def page_four():
         st.image(img, use_column_width=True, caption="A poem just for you")
 def page_five():
     st.title("About Us")
-    st.write("A journey through our childhood memories and growing up years.")
+    st.write("A journey through our childhood memories and growing up years.(You were way too good before * drooling emoji * )")
 
     st.write("### Shinu")
     st.write("**Her Childhood Photos**")
@@ -129,11 +129,11 @@ def page_five():
         <div style='display: flex; justify-content: center; flex-wrap: wrap;'>
             <div style='margin: 10px; text-align: center;'>
                 <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg' width='300' style='border-radius: 10px;'>
-                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Sweetest thing in the world</div>
             </div>
             <div style='margin: 10px; text-align: center;'>
                 <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0164.jpg' width='300' style='border-radius: 10px;'>
-                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Angel from above</div>
             </div>
         </div>
         """,
@@ -147,15 +147,15 @@ def page_five():
         <div style='display: flex; justify-content: center; flex-wrap: wrap;'>
             <div style='margin: 10px; text-align: center;'>
                 <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0015.jpg' width='300' style='border-radius: 10px;'>
-                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Shinu's</div>
             </div>
             <div style='margin: 10px; text-align: center;'>
                 <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0011.jpg' width='300' style='border-radius: 10px;'>
-                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Shinjini's</div>
             </div>
             <div style='margin: 10px; text-align: center;'>
                 <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0013.jpg' width='300' style='border-radius: 10px;'>
-                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Aadini'ssss</div>
             </div>
         </div>
         """,
