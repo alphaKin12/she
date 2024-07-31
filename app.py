@@ -124,65 +124,43 @@ def page_five():
 
     st.write("### Shinu")
     st.write("**Her Childhood Photos**")
-    her_photos = [
-        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0164.jpg"
-    ]
-
     st.markdown(
         """
-        <style>
-        .photo-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .photo-container img {
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .photo-caption {
-            text-align: center;
-            font-size: 1.2em;
-            color: #333;
-            margin-top: 5px;
-        }
-        </style>
-        """, 
+        <div style='display: flex; justify-content: center; flex-wrap: wrap;'>
+            <div style='margin: 10px; text-align: center;'>
+                <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg' width='300' style='border-radius: 10px;'>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
+            </div>
+            <div style='margin: 10px; text-align: center;'>
+                <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0164.jpg' width='300' style='border-radius: 10px;'>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
+            </div>
+        </div>
+        """,
         unsafe_allow_html=True
     )
 
-    her_photos_html = "<div class='photo-container'>"
-    for img in her_photos:
-        her_photos_html += f"""
-        <div>
-            <img src='{img}' width='300'>
-            <div class='photo-caption'>Her childhood memory</div>
-        </div>
-        """
-    her_photos_html += "</div>"
-
-    st.markdown(her_photos_html, unsafe_allow_html=True)
-
     st.write("### Aadi")
     st.write("**My Childhood Photos**")
-    my_photos = [
-        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0015.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0011.jpg",
-        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0013.jpg"
-    ]
-
-    my_photos_html = "<div class='photo-container'>"
-    for img in my_photos:
-        my_photos_html += f"""
-        <div>
-            <img src='{img}' width='300'>
-            <div class='photo-caption'>My childhood memory</div>
-        </div>
+    st.markdown(
         """
-    my_photos_html += "</div>"
-
-    st.markdown(my_photos_html, unsafe_allow_html=True)
+        <div style='display: flex; justify-content: center; flex-wrap: wrap;'>
+            <div style='margin: 10px; text-align: center;'>
+                <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0015.jpg' width='300' style='border-radius: 10px;'>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+            </div>
+            <div style='margin: 10px; text-align: center;'>
+                <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0011.jpg' width='300' style='border-radius: 10px;'>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+            </div>
+            <div style='margin: 10px; text-align: center;'>
+                <img src='https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0013.jpg' width='300' style='border-radius: 10px;'>
+                <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 def page_six():
     st.title("A Heartfelt Letter")
 
