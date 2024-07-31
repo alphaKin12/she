@@ -108,12 +108,12 @@ def page_four():
     st.write("Here are some of the heartfelt poems I wrote for you:")
 
     poem_images = [
-        "path/to/poem1.jpg",
-        "path/to/poem2.jpg",
-        "path/to/poem3.jpg",
-        "path/to/poem4.jpg",
-        "path/to/poem5.jpg",
-        "path/to/poem6.jpg"
+        "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.20.57%20PM.png",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/Screenshot%202024-07-31%20at%204.29.06%20PM.png",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163016.jpg",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163000.jpg",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_163010.jpg",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/20240731_162953.jpg"
     ]
 
     for img in poem_images:
