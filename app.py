@@ -265,22 +265,7 @@ def main():
     elif st.session_state.page == "From A to S":
         page_six()
 
-def first_page():
-    st.write("This is the first page content.")
 
-def second_page():
-    st.write("This is the second page content.")
-
-def page_three():
-    st.write("This is the third page content.")
-
-def page_four():
-    st.write("This is the fourth page content.")
-
-def page_five():
-    st.write("This is the fifth page content.")
-
-def page_six():
     st.write("This is the sixth page content.")
 
 if __name__ == "__main__":
