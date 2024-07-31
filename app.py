@@ -120,7 +120,7 @@ def page_four():
         st.image(img, use_column_width=True, caption="A poem just for you")
 def page_five():
     st.title("About Us")
-    st.write("A journey through our childhood memories and growing up years.(You were way too good before * drooling emoji * )")
+    st.write("A journey through our childhood memories and growing up years.")
 
     st.write("### Shinu")
     st.write("**Her Childhood Photos**")
