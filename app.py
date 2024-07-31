@@ -124,24 +124,40 @@ def page_five():
 
     st.write("### Shinu")
     st.write("**Her Childhood Photos**")
+
     her_photos = [
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg",
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0164.jpg"
     ]
 
+    her_photos_html = ""
     for img in her_photos:
-        st.image(img, caption="<h4>Her childhood memory</h4>", use_column_width=False, width=300)
+        her_photos_html += f"""
+        <div style='display: inline-block; text-align: center; margin: 10px;'>
+            <img src='{img}' width='300' style='border-radius: 10px;'>
+            <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>Her childhood memory</div>
+        </div>
+        """
+    st.markdown(f"<div style='text-align: center;'>{her_photos_html}</div>", unsafe_allow_html=True)
 
     st.write("### Aadi")
     st.write("**My Childhood Photos**")
+
     my_photos = [
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0015.jpg",
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0011.jpg",
         "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240731-WA0013.jpg"
     ]
 
+    my_photos_html = ""
     for img in my_photos:
-        st.image(img, caption="<h4>My childhood memory</h4>", use_column_width=False, width=300)
+        my_photos_html += f"""
+        <div style='display: inline-block; text-align: center; margin: 10px;'>
+            <img src='{img}' width='300' style='border-radius: 10px;'>
+            <div style='font-size: 1.2em; color: #333; margin-top: 5px;'>My childhood memory</div>
+        </div>
+        """
+    st.markdown(f"<div style='text-align: center;'>{my_photos_html}</div>", unsafe_allow_html=True)
 
     st.markdown(
         """
