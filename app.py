@@ -125,8 +125,8 @@ def page_five():
 
     st.write("**Her Childhood Photos**")
     her_photos = [
-        "path/to/her_childhood1.jpg",
-        "path/to/her_childhood2.jpg"
+        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0163.jpg",
+        "https://raw.githubusercontent.com/alphaKin12/she/main/IMG-20240729-WA0164.jpg"
     ]
 
     for img in her_photos:
